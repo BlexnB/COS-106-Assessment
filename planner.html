@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Academic Planner | Blessing Friday</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header class="site-header">
+<a class="brand" href="index.html">Your Name</a>
+<button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+<nav><ul class="nav-list"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a>
+</li><li><a href="projects.html">Projects</a></li><li><a href="planner.html" aria-current="page">Planner</a>
+</li><li><a href="contact.html">Contact</a></li></ul></nav>
+</header>
+
+<main>
+<section class="stack narrow">
+<h1>Academic planner</h1>
+<form id="task-form" novalidate>
+<label for="task-input">New task</label>
+<div class="row"><input id="task-input" type="text" placeholder="example : Study maths today" autocomplete="off"><button class="btn" type="submit">Add task</button></div>
+<p id="task-error" class="error" role="alert"></p>
+</form>
+
+<p id="task-count" class="note"></p>
+<ul id="task-list" class="tasks"></ul>
+</section>
+</main>
+
+<footer><p>&copy; 2026 Blessing Friday &middot; COS 106 Term Project</p></footer>
+<script src="js/main.js"></script>
+<script src="js/planner.js"></script>
+</body>
+</html>
